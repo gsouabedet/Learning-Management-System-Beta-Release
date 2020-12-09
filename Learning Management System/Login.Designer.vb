@@ -28,11 +28,11 @@ Partial Class Login
         Me.Label3 = New System.Windows.Forms.Label()
         Me.txtUsername = New System.Windows.Forms.TextBox()
         Me.txtPassword = New System.Windows.Forms.TextBox()
-        Me.btnStudentLogin = New System.Windows.Forms.Button()
-        Me.btnAdminLogin = New System.Windows.Forms.Button()
+        Me.btnLogin = New System.Windows.Forms.Button()
         Me.StatusStrip1 = New System.Windows.Forms.StatusStrip()
         Me.statusBar = New System.Windows.Forms.ToolStripStatusLabel()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+        Me.btnExit = New System.Windows.Forms.Button()
         Me.StatusStrip1.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -80,23 +80,14 @@ Partial Class Login
         Me.txtPassword.Size = New System.Drawing.Size(263, 26)
         Me.txtPassword.TabIndex = 4
         '
-        'btnStudentLogin
+        'btnLogin
         '
-        Me.btnStudentLogin.Location = New System.Drawing.Point(390, 493)
-        Me.btnStudentLogin.Name = "btnStudentLogin"
-        Me.btnStudentLogin.Size = New System.Drawing.Size(189, 63)
-        Me.btnStudentLogin.TabIndex = 5
-        Me.btnStudentLogin.Text = "Student Login"
-        Me.btnStudentLogin.UseVisualStyleBackColor = True
-        '
-        'btnAdminLogin
-        '
-        Me.btnAdminLogin.Location = New System.Drawing.Point(631, 493)
-        Me.btnAdminLogin.Name = "btnAdminLogin"
-        Me.btnAdminLogin.Size = New System.Drawing.Size(189, 63)
-        Me.btnAdminLogin.TabIndex = 6
-        Me.btnAdminLogin.Text = "Admin Login"
-        Me.btnAdminLogin.UseVisualStyleBackColor = True
+        Me.btnLogin.Location = New System.Drawing.Point(390, 483)
+        Me.btnLogin.Name = "btnLogin"
+        Me.btnLogin.Size = New System.Drawing.Size(189, 63)
+        Me.btnLogin.TabIndex = 5
+        Me.btnLogin.Text = "Login"
+        Me.btnLogin.UseVisualStyleBackColor = True
         '
         'StatusStrip1
         '
@@ -112,7 +103,7 @@ Partial Class Login
         '
         Me.statusBar.ForeColor = System.Drawing.Color.Red
         Me.statusBar.Name = "statusBar"
-        Me.statusBar.Size = New System.Drawing.Size(0, 17)
+        Me.statusBar.Size = New System.Drawing.Size(0, 15)
         '
         'PictureBox1
         '
@@ -124,15 +115,24 @@ Partial Class Login
         Me.PictureBox1.TabIndex = 8
         Me.PictureBox1.TabStop = False
         '
+        'btnExit
+        '
+        Me.btnExit.Location = New System.Drawing.Point(642, 483)
+        Me.btnExit.Name = "btnExit"
+        Me.btnExit.Size = New System.Drawing.Size(189, 63)
+        Me.btnExit.TabIndex = 9
+        Me.btnExit.Text = "Exit"
+        Me.btnExit.UseVisualStyleBackColor = True
+        '
         'Login
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 20.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(1198, 719)
+        Me.Controls.Add(Me.btnExit)
         Me.Controls.Add(Me.PictureBox1)
         Me.Controls.Add(Me.StatusStrip1)
-        Me.Controls.Add(Me.btnAdminLogin)
-        Me.Controls.Add(Me.btnStudentLogin)
+        Me.Controls.Add(Me.btnLogin)
         Me.Controls.Add(Me.txtPassword)
         Me.Controls.Add(Me.txtUsername)
         Me.Controls.Add(Me.Label3)
@@ -153,9 +153,9 @@ Partial Class Login
     Friend WithEvents Label3 As Label
     Friend WithEvents txtUsername As TextBox
     Friend WithEvents txtPassword As TextBox
-    Friend WithEvents btnStudentLogin As Button
-    Friend WithEvents btnAdminLogin As Button
+    Friend WithEvents btnLogin As Button
     Friend WithEvents StatusStrip1 As StatusStrip
     Friend WithEvents statusBar As ToolStripStatusLabel
     Friend WithEvents PictureBox1 As PictureBox
+    Friend WithEvents btnExit As Button
 End Class
